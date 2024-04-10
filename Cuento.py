@@ -59,7 +59,7 @@ def mostrar_secuencia(window, titulo, narrativa, secuencia):
 # Función para generar la narrativa basada en los datos del niño
 def generar_narrativa(nombre, edad, color_favorito):
     narrativas = [
-        f"Había una vez un niño llamado {nombre}, que tenía {edad} años. Un día, mientras paseaba por un bosque lleno de árboles verdes como su color favorito, {color_favorito}, se encontró con una sorpresa inesperada...",
+        f"Había una vez un niño con el nombre {nombre}, que tenía {edad} años. Un día, mientras paseaba por un bosque lleno de árboles verdes como su color favorito, {color_favorito}, se encontró con una sorpresa inesperada...",
         f"La sorpresa era un {color_favorito} pájaro que hablaba. El pájaro le dijo a {nombre} que estaba perdido y necesitaba ayuda para encontrar su camino a casa...",
         f"{nombre}, siendo un niño amable y valiente, decidió ayudar al pájaro. Juntos, se embarcaron en una emocionante aventura a través del bosque...",
         f"En su viaje, {nombre} y el pájaro se encontraron con muchos desafíos. Pero con cada desafío que superaban, su amistad se hacía más fuerte...",
