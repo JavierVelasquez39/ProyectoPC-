@@ -1,0 +1,21 @@
+Función quitar_tildes(frase):
+    tildes = {'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'Á': 'A', 'É': 'E', 'Í': 'I', 'Ó': 'O', 'Ú': 'U'}
+    Para cada letra_tilde, letra_sin_tilde en tildes:
+        Reemplazar letra_tilde por letra_sin_tilde en frase
+    Devolver frase
+
+Función main():
+    Pedir al usuario que ingrese una frase y guardarla en la variable frase
+    Pedir al usuario que ingrese una palabra para buscar y guardarla en la variable palabra
+
+    frase_sin_tildes = quitar_tildes(frase)
+
+    Convertir palabra a minúsculas y guardarla nuevamente en la variable palabra
+    Convertir frase_sin_tildes a minúsculas y guardarla nuevamente en la variable frase_sin_tildes
+
+    Si palabra está en frase_sin_tildes:
+        Imprimir "La palabra 'palabra' sí está en la frase."
+    Sino:
+        Imprimir "La palabra 'palabra' no está en la frase."
+
+Ejecutar la función main
