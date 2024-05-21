@@ -6,15 +6,15 @@ def validar_posicion(posicion):
 
 Tablero = [[["v"] for _ in range(8)] for _ in range(8)]
 
-color_torre = input("Ingrese el color de la torre (blanco o negro): ").lower()
+color_torre = input("Ingrese el color de la torre (blanco o negro): ").lower().strip()
 while not validar_color(color_torre): 
     print("Ingrese un color válido.")
-    color_torre = input("Ingrese el color de la torre (blanco o negro): ").lower()
+    color_torre = input("Ingrese el color de la torre (blanco o negro): ").lower().strip()
 
-posicion_torre = input("Ingrese la posición de la torre (a1, b2, e4, etc.): ").lower()
+posicion_torre = input("Ingrese la posición de la torre (a1, b2, e4, etc.): ").lower().strip()
 while not validar_posicion(posicion_torre):
     print("Ingrese una posición válida.")
-    posicion_torre = input("Ingrese la posición de la torre (a1, b2, e4, etc.): ").lower()
+    posicion_torre = input("Ingrese la posición de la torre (a1, b2, e4, etc.): ").lower().strip()
 
 fila_torre, col_torre = 8 - int(posicion_torre[1]), ord(posicion_torre[0]) - ord('a')
 
@@ -29,15 +29,15 @@ num_piezas = int(input("Ingrese el número de piezas adicionales: "))
 
 for i in range(num_piezas):
     tipo_pieza = input(f"Ingrese el tipo el tipo de pieza {i+1} (alfil, peón, caballo, etc.): ")
-    color_pieza = input(f"Ingrese el color de la pieza {i+1} (blanco o negro): ").lower()
+    color_pieza = input(f"Ingrese el color de la pieza {i+1} (blanco o negro): ").lower().strip()
     while not validar_color(color_pieza):
         print("Ingrese un color válido.")
-        tipo_pieza = input(f"Ingrese el tipo el tipo de pieza {i+1} (alfil, peón, caballo, etc.): ")
+        color_pieza = input(f"Ingrese el color de la pieza {i+1} (blanco o negro): ").lower().strip()
     
-    posicion_pieza = input(f"Ingrese la posición de la pieza {i+1} (a1, b2, e4, etc.): ").lower()
+    posicion_pieza = input(f"Ingrese la posición de la pieza {i+1} (a1, b2, e4, etc.): ").lower().strip()
     while not validar_posicion(posicion_pieza):
         print("Ingrese una posición válida. El formato correcto <Letra><Número>, ej: a1, b2, e4, etc")
-        posicion_pieza = input(f"Ingrese la posición de la pieza {i+1} (a1, b2, e4, etc.): ").lower()
+        posicion_pieza = input(f"Ingrese la posición de la pieza {i+1} (a1, b2, e4, etc.): ").lower().strip()
 
     fila_pieza, col_pieza = 8 - int(posicion_pieza[1]), ord(posicion_pieza[0]) - ord('a')
 
